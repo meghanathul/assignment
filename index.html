@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sub-con">
+            <div class="heading">
+                <h2>Welcome <br>To</h2>
+                <h1 style="margin-top:30px"><b>M</b>VERVE</h1>
+                <span>Inspired Application</span>
+                <h4 style="margin-top:30px">To connect with us<br>Please enter the details.</h4>
+            </div>
+        </div>
+        <div class="sub-con1">
+            <h2 style="padding: 30px; color:darkblue">Create an account</h2>
+
+            <form onsubmit="return validation()" action="final.html">
+                <div class="form-con">
+                    <div style="width:200px">
+                        <lable for="name">First Name</lable><br>
+                        <input type="text" placeholder="First Name" id="name" name='name'>
+                        <span id="data" class="demo"></span>
+                    </div>
+                    <div class="lname" style="width:200px;position: absolute;margin-top: -57px;margin-left: 250px;">
+                        <lable for="lname">Last Name</lable><br>
+                        <input type="text" placeholder="Last Name" id="lname" name="lastname">
+                        <span id="data1" class="demo"></span>
+                    </div>
+                    <div class="age" style="width:200px;position: absolute;margin-top: -57px;margin-left: 500px;">
+                        <lable for="age">Age</lable><br>
+                        <input type="number" placeholder="Age(18-100)" id="age" name="age">
+                        <span id="data2" class="demo"></span>
+                    </div>
+                    <div class='mobile' style="width:200px;position: absolute;margin-top:30px">
+                        <lable for="mobile">Mobile Number</lable><br>
+                        <input type="number" placeholder="xxxxx xxxxx" id="mobile" name='mobile'>
+                        <span id="data3" class="demo"></span>
+                    </div>
+                    <div class='email' style="width:200px;position: absolute;margin-top:30px;margin-left: 300px;">
+                        <lable for="email">Email</lable>
+                        <input type="text" placeholder="abc@xxx222" id="email" name="email">
+                        <span id="data4" class="demo"></span>
+                    </div>
+                    <div class='description' style="position: absolute;margin-top:95px;">
+                        <lable>Description(optional)</lable><br>
+                        <textarea rows="10" cols="100" placeholder="Max 150 character"></textarea>
+                    </div>
+
+                    <div>
+
+                        <div class='password' style="position: absolute;margin-top:300px;">
+                            <lable for='password'>Password</lable><br>
+                            <input type="password" id="password" placeholder="password">
+                            <span style="padding: 8px;border:1px solid black;color: blue;"><i
+                                    class="fas fa-eye"></i></span>
+                            <span id="data5 " class="demo"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="con-password" style="position: absolute;margin-top:300px;margin-left: 300px;">
+                        <lable for='con-password'>Confirm Password</lable><br>
+                        <input type="password" id="con-password" placeholder="confirm password">
+                        <span style="padding: 8px;border:1px solid black;color: blue;"><i class="fas fa-eye"></i></span>
+                        <span id="data6 " class="demo"></span>
+                    </div>
+
+                </div>
+        </div>
+        <button type='submit' id="btn2">SUBMIT</button>
+        <button type="submit" id="btn1" onclick="reset()">RESET</button>
+        </form>
+    </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

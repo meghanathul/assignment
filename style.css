@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid green; */
+    width: 90vw;
+    height: 95vh;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    box-shadow: 10px 10px 10px gray;
+}
+.sub-con{
+    /* border: 2px solid blue; */
+    background-image: linear-gradient(rgb(89, 53, 53),blue);
+    width: 450px;
+    height: 95vh;
+    color: white;
+}
+.heading{
+    /* border: 2px solid gray; */
+    position: relative;
+    text-align: center;
+    line-height: 2rem;
+    top: 150px;
+}
+.sub-con1{
+    /* border: 2px solid red; */
+    position: relative;
+    left: -4px;
+    width: 780px;
+}
+.form-con{
+    /* border: 2px solid green; */
+  height: 600px;
+  width: 750px;
+    margin: 20px;
+}
+.form-con lable{
+    font-size: 20px;
+}
+input{
+    padding: 8px;
+    width: 230px;
+}
+button{
+    width: 100px;
+    cursor: pointer;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    top: -190px;
+    left: 200px;
+    font-size:14px ;
+    color: blue;
+}
+#btn1{
+    position: relative;
+    margin-left: 300px;
+}
+button:hover{
+    background: blue;
+    color: white;
+}
+.demo{
+    color: red;
+    
+}
+#message{
+    width: 500px;
+    height: 200px;
+    background: white;
+    border: 1px solid green;
+    position: absolute;
+    border-radius: 20px;
+    top: 30%;
+    left: 40%;
+  display: block;
+  box-shadow: 10px 10px 10px gray;
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        display: block;
+        /* border: 2px solid green; */
+        width: 90vw;
+        height: 1200px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        box-shadow: 10px 10px 10px gray;
+    }
+    .sub-con{
+        /* border: 2px solid blue; */
+        background-image: linear-gradient(rgb(89, 53, 53),blue);
+        width: 90vw;
+        height: 30vh;
+        color: white;
+    }
+    .heading{
+        /* border: 2px solid gray; */
+        position: relative;
+        top: 0;
+        text-align: center;
+        line-height: 1.1rem;
+    
+    }
+    .sub-con1{
+        /* border: 2px solid red; */
+        position: relative;
+        left: 0;
+        right: 300px;
+        width: 600px;
+    }
+    
+    .lname{
+        position:relative;
+        /* border: 2px solid green; */
+        left: -230px;
+        top: 250px;
+    }
+    .age{
+  
+        position:relative;
+        /* border: 2px solid green; */
+        left: -480px;
+        top: 340px;
+    }
+    .mobile{
+
+        position:relative;
+        /* border: 2px solid green; */
+        left: 10px;
+        top: 350px;
+    }
+    .email{
+
+        position:relative;
+        /* border: 2px solid green; */
+        left: -290px;
+        top: 450px;
+    }
+    .password{
+
+        position:relative;
+        /* border: 2px solid green; */
+        left: 10px;
+        top: 280px;
+    }
+    .con-password{
+
+        position:relative;
+        /* border: 2px solid green; */
+        left: -290px;
+        top: 350px;
+    }
+    .description{
+        
+        position:relative;
+        /* border: 2px solid green; */
+        left: 10px;
+        width: 500px;
+        top: 650px;
+    }
+    textarea{
+        width: 500px;
+    }
+     .form-con lable{
+        display: none;
+        font-size: 20px;
+    }
+    
+    input{
+        padding: 8px;
+        width: 400px;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+    
+    button{
+        width: 100px;
+        cursor: pointer;
+        border: 2px solid blue;
+        border-radius: 20px;
+        padding: 10px;
+        position: relative;
+        top: 200px;
+        left: 200px;
+        font-size:14px ;
+        color: blue;
+    } 
+     #btn1{
+        position: relative;
+        margin-left: 0px;
+    } 
+    input::placeholder{font-size: 18px;}   
+    
+}
